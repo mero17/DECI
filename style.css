@@ -1,0 +1,40 @@
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css');
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #d0dbe1;
+    color: #444447;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    padding: 15px;
+    transition:all 0.5s ease-in-out 0s ;
+    font-weight: bold;
+}
+.container-1,
+.container-2,
+.container-3 {
+    border: 1px solid red;
+    border-radius: 2rem;
+    background-color: #E6EAEC;
+    box-shadow: 10px 10px 10px 10px #9caebd ;
+    padding: 2rem;
+    padding-top: 1px;
+    margin-bottom: 20px;
+    transition: margin 0.5s ease-in-out 0s;
+}
+.container-1:hover {
+    margin-top: 50px;
+}
+.container-2:hover {
+    margin-top: 50px;
+
+}
+.container-3:hover {
+    margin-top: 50px;
+}
+a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
