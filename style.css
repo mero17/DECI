@@ -22,6 +22,10 @@ a {
     margin-bottom: 20px;
     transition: all 0.5s ease-in-out 0s;
 }
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
 .container:hover {
     margin-top: 50px;
     border: 4px solid black;
