@@ -12,24 +12,32 @@ all_links.forEach(element => {
 const all = document.querySelectorAll(".common")
 const hidden = document.querySelectorAll(".hidden")
 // var rect = div4.getBoundingClientRect()
-const showBox = window.innerHeight * 0.8
 function themeSwitch()
 {
+    document.getElementById("newswitch").classList.toggle("dark-mode")
     body.classList.toggle("dark-mode")
+    document.getElementById("sun_icon").classList.toggle("dark-mode")
+    document.getElementById("moon_icon").classList.toggle("dark-mode")
+    document.getElementById("theme-change").classList.toggle("dark-mode")
     all.forEach(element => {
         element.classList.toggle("dark-mode")
     })
     if (body.classList.contains("dark-mode"))
     {
-        toggleButton.textContent = "☀️";
+        document.getElementById("moon").classList.add("dark-mode")
+        document.getElementById("sun").classList.remove("light-mode")
+        document.getElementById("switch").classList.add("dark-mode")
     }
     else
     {
-        toggleButton.textContent = "🌙";
+        document.getElementById("moon").classList.remove("dark-mode")
+        document.getElementById("sun").classList.add("light-mode")
+        document.getElementById("switch").classList.remove("dark-mode")
     }
 }
 function showElement()
 {
+    var showBox = window.innerHeight * 0.9
     hidden.forEach(element => {
         if (element.getBoundingClientRect().top < showBox)
         {
