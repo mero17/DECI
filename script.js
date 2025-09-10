@@ -39,7 +39,7 @@ function showElement()
 {
     var showBox = window.innerHeight * 0.9
     hidden.forEach(element => {
-        if (element.getBoundingClientRect().top < showBox)
+        if (element.getBoundingClientRect().top -50 < showBox)
         {
             element.classList.remove("hidden")
         }
